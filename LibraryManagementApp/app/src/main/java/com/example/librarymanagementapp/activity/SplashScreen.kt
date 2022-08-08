@@ -1,10 +1,11 @@
-package com.example.librarymanagementapp
+package com.example.librarymanagementapp.activity
 
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.example.librarymanagementapp.R
 
 
 class SplashScreen : AppCompatActivity() {

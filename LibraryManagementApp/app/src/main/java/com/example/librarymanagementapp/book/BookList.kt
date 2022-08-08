@@ -1,13 +1,14 @@
-package com.example.librarymanagementapp
+package com.example.librarymanagementapp.book
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.librarymanagementapp.R
+import com.example.librarymanagementapp.activity.NewBookActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class BookList : AppCompatActivity() {
@@ -58,13 +59,13 @@ class BookList : AppCompatActivity() {
 
         if (requestCode == newBookActivityRequestCode && resultCode == RESULT_OK) {
 
-            val name = intentData?.getStringExtra("bookname")
+            val name = intentData?.getStringExtra("bookName")
             val quantity = intentData?.getStringExtra("quantity")
 
-            println("Bookname : $name, quantity: $quantity")
+            println("BookName : $name, quantity: $quantity")
 
-            intentData?.getStringExtra("bookname")?.let { reply ->
-                val book = name?.let { quantity?.let { it1 -> Book(it,34567,"plmnji", it1.toInt()) } }
+            intentData?.getStringExtra("bookName")?.let { reply ->
+                val book = name?.let { quantity?.let { it1 -> Book(it,34567,"Abc", it1.toInt()) } }
                 println("reply is $reply")
                 book?.let { bookViewModel.insert(it) }
             }

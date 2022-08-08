@@ -8,4 +8,42 @@
     <string name="add_book">Add Book</string>
     <string name="upload_image">Upload Image</string>
     <string name="empty_not_saved">Book not saved because it is empty.</string>
+    <string name="signup_details">SIGNUP DETAILS</string>
+    <string name="user_name">Username: <font color='#FF0000'>*</font></string>
+    <string name="signup">SIGNUP</string>
+    <string name="email">Email: <font color='#FF0000'>*</font></string>
+    <string name="mobile">Mobile: <font color='#FF0000'>*</font></string>
+    <string name="user">User</string>
+    <string name="admin">Admin</string>
+    <string name="role">Role:</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="pass_word">Password: <font color='#FF0000'>*</font></string>
+    <string name="admin_dashboard">ADMIN DASHBOARD</string>
+    <string name="book_list">BOOK LIST</string>
+    <string name="add_book1">ADD BOOK</string>
+    <string name="welcome_to_library_management_system">Welcome to Library Management System</string>
+    <string name="btn_book_details">View Books in Library</string>
+    <string name="user_details">User Details</string>
+    <string name="new_book_added">New Book Added!!</string>
+    <string name="book_name_1">Book Name:</string>
+    <string name="book_number_1">Book Number:</string>
+    <string name="author_1">Author:</string>
+    <string name="quantity_1">Quantity:</string>
+    <string name="book_name_2">Book name</string>
+    <string name="book_number_2">Book number</string>
+    <string name="quantity_2">Quantity</string>
+    <string name="author_2">Author</string>
+    <string name="library_management_system">LIBRARY MANAGEMENT SYSTEM</string>
+    <string name="username">Username</string>
+    <string name="user_name_2">User Name :</string>
+    <string name="password_1">Password :</string>
+    <string name="password_2">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="reset">RESET</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="email_1">Email</string>
+    <string name="name_2">Name:</string>
+    <string name="quantity_3">Quantity:</string>
+    <string name="textview">TextView</string>
 </resources>

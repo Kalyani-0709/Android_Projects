@@ -4,30 +4,36 @@
     package="com.example.librarymanagementapp">
 
     <application
-        android:name=".BooksApplication"
+        android:name=".book.BooksApplication"
         android:allowBackup="true"
         android:icon="@mipmap/libraryicon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PS_MVVM">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".ViewBookDetails"
+            android:name=".AfterNotification"
             android:exported="false" />
         <activity
-            android:name=".BookList"
+            android:name=".user.UserList"
             android:exported="false" />
         <activity
-            android:name=".AdminDashboard"
+            android:name=".book.ViewBookDetails"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".book.BookList"
             android:exported="false" />
         <activity
-            android:name=".NewBookActivity"
+            android:name=".book.AdminDashboard"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NewBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

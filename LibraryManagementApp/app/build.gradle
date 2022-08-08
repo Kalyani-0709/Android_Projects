@@ -37,18 +37,23 @@ android {
         exclude 'META-INF/atomicfu.kotlin_module'
     }
 
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+    }
+
 }
 
 dependencies {
 
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
     implementation "androidx.activity:activity-ktx:$rootProject.activityVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Dependencies for working with Architecture components
     // You'll probably have to update the version numbers in build.gradle (Project)
 
     // Room components
-    def roomVersion = "2.4.0-alpha03"
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
@@ -56,7 +61,6 @@ dependencies {
     // Lifecycle components
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion"
 
     // Kotlin components
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
@@ -81,11 +85,21 @@ dependencies {
     // retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
-
     // GSON
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    implementation 'com.google.android.material:material:1.2.0'
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+
+    implementation "androidx.fragment:fragment-ktx:1.1.0"
+
+    implementation("androidx.core:core-ktx:$core_version")
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation "androidx.room:room-runtime:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
 
 }

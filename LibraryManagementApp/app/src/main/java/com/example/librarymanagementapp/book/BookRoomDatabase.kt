@@ -1,4 +1,4 @@
-package com.example.librarymanagementapp
+package com.example.librarymanagementapp.book
 
 import android.content.Context
 import androidx.room.*
@@ -21,9 +21,9 @@ abstract  class BookRoomDatabase  : RoomDatabase() {
        fun getDatabase(
            context: Context,   // MainActivity( Context )  Application
            scope: CoroutineScope   //  CoroutineScope( SupervisorJob() )
-       ) : BookRoomDatabase{
+       ) : BookRoomDatabase {
 
-           return  INSTANCE?: synchronized( this ){
+           return  INSTANCE ?: synchronized( this ){
 
                val instance = Room.databaseBuilder(
                    context.applicationContext,

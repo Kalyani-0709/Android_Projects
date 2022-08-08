@@ -1,4 +1,4 @@
-package com.example.librarymanagementapp
+package com.example.librarymanagementapp.book
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.librarymanagementapp.R
 
 class BookListAdapter : ListAdapter<Book, BookListAdapter.BookViewHolder>(BOOKS_COMPARATOR) {
 
@@ -21,8 +22,8 @@ class BookListAdapter : ListAdapter<Book, BookListAdapter.BookViewHolder>(BOOKS_
     }
 
     class BookViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val bookName: TextView = itemView.findViewById(R.id.bookNameinList)
-        private val quantity: TextView = itemView.findViewById(R.id.quantityinList)
+        private val bookName: TextView = itemView.findViewById(R.id.bookNameInList)
+        private val quantity: TextView = itemView.findViewById(R.id.quantityInList)
 
 
         fun bind(text: String?, count: Int) {
